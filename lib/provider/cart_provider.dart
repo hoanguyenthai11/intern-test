@@ -6,7 +6,7 @@ class Cart with ChangeNotifier {
 
   get shoes => _shoes;
 
-  int _counter = 0;
+  final int _counter = 0;
   int get counter => _counter;
 
   double _totalPrice = 0.0;
@@ -52,14 +52,14 @@ class Cart with ChangeNotifier {
     return _totalPrice;
   }
 
-  void addCounter(int id) {
-    _counter++;
+  // void addCounter(int id) {
+  //   _counter++;
 
-    notifyListeners();
-  }
+  //   notifyListeners();
+  // }
 
-  void removeCounter() {
-    _counter++;
-    notifyListeners();
-  }
+  // void removeCounter() {
+  //   _counter++;
+  //   notifyListeners();
+  // }
 }
